@@ -11,6 +11,8 @@ import RecipeLibrary from './pages/RecipeLibrary';
 import TrainingLibrary from './pages/TrainingLibrary';
 import Donate from './pages/Donate';
 import Blog from './pages/Blog';
+import Book from './pages/Book';
+import Merch from './pages/Merch';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Link style={styles.link} to="/training-library">Training Library</Link>
           <Link style={styles.link} to="/donate">Donate</Link>
           <Link style={styles.link} to="/blog">Blog</Link>
+          <Link style={styles.link} to="/book">Book</Link>
+          <Link style={styles.link} to="/merch">Merch</Link>
         </nav>
       </header>
 
@@ -43,6 +47,8 @@ function App() {
           <Route path="/training-library" element={<TrainingLibrary />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/merch" element={<Merch />} />
         </Routes>
       </main>
     </Router>
